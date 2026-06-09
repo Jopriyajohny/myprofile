@@ -3,123 +3,329 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jopriya Johny | Personal Website</title>
+    <title>Jopriya Johny | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-wrapper">
-      <header class="hero">
-        <div class="hero__content">
-          <p class="eyebrow">Hello, I’m</p>
-          <h1>Jopriya Johny</h1>
-          <div class="hero__media">
-            <img
-              class="hero__image"
-              src="JopriyaPic.jpg"
-              alt="Photo of Jopriya Johny"
-            />
-          </div>
-          <p class="subtitle">
-            Information Technology Student<br />
-            Aspiring Software Developer • Web Enthusiast • Lifelong Learner
-          </p>
-          <p>
-            Transforming ideas into digital experiences through code, creativity, and continuous learning.
-          </p>
-          <div class="links">
-            <a class="button" href="#about">About Me</a>
-            <a class="button button--alt" href="#contact">Contact</a>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand__logo">JJ</span>
+          <div>
+            <p class="brand__eyebrow">Jopriya Johny</p>
+            <span class="brand__tag">B.Tech IT Student</span>
           </div>
         </div>
+        <nav class="nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#journey">Journey</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">Mode</button>
       </header>
 
       <main>
-        <section id="about" class="section section--light">
-          <div class="container">
-            <div class="section-header">
-              <h2>About Me</h2>
-              <p>
-                Hello! I'm Jopriya Johny, an Information Technology student at Toc H Institute of Science & Technology, Arakkunnam.
-
-With a strong interest in programming and web development, I am constantly exploring new technologies and expanding my knowledge through projects and hands-on learning. I believe that continuous learning, creativity, and dedication are the foundations of success in the technology field.
-
-I am committed to building a strong technical foundation and contributing to innovative solutions that make a difference.
-              </p>
-            </div>
-            <div class="grid">
-              <div>
-                <h3>Core strengths</h3>
-                <ul>
-    <li>💻 Programming Fundamentals</li>
-    <li>🌐 Front-End Web Development</li>
-    <li>🧩 Problem Solving</li>
-    <li>🚀 Fast Learner</li>
-    <li>🤝 Team Collaboration</li>
-    <li>🗣️ Effective Communication</li>
-    <li>📚 Continuous Learning</li>
-    <li>🎯 Goal-Oriented Mindset</li>
-</ul>
+        <section id="home" class="hero section section--hero">
+          <div class="container hero__inner">
+            <div class="hero__figure fade-up">
+              <div class="hero__photo">
+                <img src="JopriyaPic.jpg" alt="Jopriya Johny" />
               </div>
-              <div>
-                <h3>What I value</h3>
-                <p>
-                 I value innovation, lifelong learning, and meaningful impact. 
-                 My goal is not only to develop technical skills but also to use technology to solve real-world problems, create positive experiences, and contribute to a better digital future.
-              
-                 </p>
+            </div>
+            <div class="hero__content fade-up">
+              <p class="eyebrow">Hello, I’m</p>
+              <h1>Jopriya Johny</h1>
+              <p class="hero__title">Aspiring Software Developer • Web Enthusiast</p>
+              <p class="hero__text">
+                I design polished portfolios, build clean user experiences, and solve real-world problems using modern web technologies.
+              </p>
+
+              <div class="hero__actions">
+                <a class="button button--primary" href="#projects">View Projects</a>
+                <a class="button button--secondary" href="resume.pdf" download>Download Resume</a>
+                <a class="button button--ghost" href="#contact">Contact Me</a>
+              </div>
+
+              <div class="hero__socials">
+                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="mailto:jopriyajohnyofficial@gmail.com">Email</a>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="portfolio" class="section">
-          <div class="container">
-            <div class="section-header">
-              <h2>Projects & Learning Journey</h2>
+        <section id="about" class="section section--surface fade-up">
+          <div class="container section__grid">
+            <div class="section__info">
+              <p class="eyebrow">About Me</p>
+              <h2>Passionate IT student building modern web experiences.</h2>
               <p>
-                A collection of projects and learning experiences that reflect my growth in programming, web development, and technology.
+                I am an Information Technology student at Toc H Institute of Science & Technology, with a strong interest in programming, web development, and software design. I enjoy learning new technologies and transforming ideas into polished digital products.
               </p>
             </div>
-            <div class="cards">
-              <article class="card">
-                <h3>Personal Portfolio Website</h3>
-                <p>
-                Designed and developed a responsive portfolio website using HTML and CSS to showcase my education, skills, and projects.
-              
-                </p>
+            <div class="about__cards">
+              <article class="mini-card">
+                <h3>Career Goal</h3>
+                <p>Secure an internship that helps me grow as a software developer and contribute to impactful projects.</p>
               </article>
-              <article class="card">
-                <h3>Programming Practice Projects</h3>
-                <p>
-                Developed various programs using C and Python to strengthen problem-solving skills, logical thinking, and programming fundamentals.  
-                </p>
-              </article>
-              <article class="card">
-                <h3>Web Development Learning Projects</h3>
-                <p>
-                Created responsive web pages and mini-projects while exploring modern web development concepts and best practices.  
-                </p>
+              <article class="mini-card">
+                <h3>Learning Journey</h3>
+                <p>Building my skills through hands-on projects, programming practice, and real-world problem solving.</p>
               </article>
             </div>
           </div>
         </section>
 
-        <section id="contact" class="section section--light">
-          <div class="container contact-panel">
-            <div>
-              <h2>Let's Connect</h2>
-              <p>
-                Every great opportunity begins with a conversation. Whether you're here to explore my work, discuss technology, or share ideas, I welcome the chance to connect and learn from new experiences.
-              </p>
+        <section id="skills" class="section fade-up">
+          <div class="container">
+            <div class="section-header">
+              <p class="eyebrow">Skills</p>
+              <h2>Technical & soft skills for modern development.</h2>
             </div>
-            <a class="button button--primary" href="mailto:jopriyajohnyofficial@gmail.com">Get In Touch</a>
+
+            <div class="skills-grid">
+              <div class="skill-card">
+                <h3>Programming Fundamentals</h3>
+                <p>C • Python • algorithm design • data structures</p>
+              </div>
+              <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>HTML • CSS • JavaScript • responsive layout</p>
+              </div>
+              <div class="skill-card">
+                <h3>Problem Solving</h3>
+                <p>Debugging, logic building, and iterative improvement.</p>
+              </div>
+              <div class="skill-card">
+                <h3>Communication</h3>
+                <p>Clear collaboration, strong documentation, and team alignment.</p>
+              </div>
+              <div class="skill-card">
+                <h3>Teamwork</h3>
+                <p>Open collaboration, shared ownership, and positive teamwork.</p>
+              </div>
+              <div class="skill-card">
+                <h3>Time Management</h3>
+                <p>Organized planning, deadlines, and consistent progress tracking.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section section--surface fade-up">
+          <div class="container">
+            <div class="section-header">
+              <p class="eyebrow">Projects</p>
+              <h2>Work that demonstrates my growth and capabilities.</h2>
+            </div>
+
+            <div class="project-grid">
+              <article class="project-card" data-detail="portfolio" data-title="Portfolio Website" data-description="A responsive personal portfolio site built with HTML, CSS, and subtle animations to present projects, skills, and contact information." data-tech="HTML, CSS, JavaScript">
+                <div class="project-card__visual">Portfolio</div>
+                <div class="project-card__body">
+                  <h3>Portfolio Website</h3>
+                  <p>Designed a polished portfolio experience with responsive layout and modern UI.</p>
+                  <span>HTML • CSS • JavaScript</span>
+                  <button class="button button--ghost" type="button">View Details</button>
+                </div>
+              </article>
+
+              <article class="project-card" data-detail="practice" data-title="Programming Practice" data-description="A collection of C and Python programs focused on problem solving, algorithms, and real-world tasks." data-tech="C, Python">
+                <div class="project-card__visual">Code</div>
+                <div class="project-card__body">
+                  <h3>Programming Practice</h3>
+                  <p>Built algorithmic solutions and practice applications to sharpen coding fundamentals.</p>
+                  <span>C • Python</span>
+                  <button class="button button--ghost" type="button">View Details</button>
+                </div>
+              </article>
+
+              <article class="project-card" data-detail="web" data-title="Web Learning Projects" data-description="Small web applications and pages created while learning design, layout, and interactive user interfaces." data-tech="HTML, CSS, JavaScript">
+                <div class="project-card__visual">Web</div>
+                <div class="project-card__body">
+                  <h3>Web Learning Projects</h3>
+                  <p>Explored responsive design and new front-end techniques through mini-projects.</p>
+                  <span>HTML • CSS • JavaScript</span>
+                  <button class="button button--ghost" type="button">View Details</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="certificates" class="section fade-up">
+          <div class="container">
+            <div class="section-header">
+              <p class="eyebrow">Certificates</p>
+              <h2>Certifications that support my learning path.</h2>
+            </div>
+
+            <div class="cert-grid">
+              <article class="cert-card" data-detail="certificate" data-title="Web Fundamentals" data-description="Certificate for completing a foundational web development course covering HTML, CSS, and responsive design." data-tech="HTML, CSS">
+                <div>
+                  <h3>Web Fundamentals</h3>
+                  <p>Building responsive websites and modern web interfaces.</p>
+                </div>
+                <button class="button button--ghost" type="button">View Certificate</button>
+              </article>
+
+              <article class="cert-card" data-detail="certificate" data-title="Programming Essentials" data-description="Certificate for demonstrating practical programming skills in C and Python through guided exercises." data-tech="C, Python">
+                <div>
+                  <h3>Programming Essentials</h3>
+                  <p>Strengthening logic, syntax, and problem-solving techniques.</p>
+                </div>
+                <button class="button button--ghost" type="button">View Certificate</button>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="journey" class="section section--surface fade-up">
+          <div class="container">
+            <div class="section-header">
+              <p class="eyebrow">Learning Journey</p>
+              <h2>Progress milestones from student to developer.</h2>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline__item">
+                <span>2023</span>
+                <div>
+                  <h4>Started B.Tech IT</h4>
+                  <p>Focused on programming fundamentals, networking, and software engineering basics.</p>
+                </div>
+              </div>
+              <div class="timeline__item">
+                <span>2024</span>
+                <div>
+                  <h4>Built practical projects</h4>
+                  <p>Created portfolio sites, Python programs, and web applications to apply classroom learning.</p>
+                </div>
+              </div>
+              <div class="timeline__item">
+                <span>2025</span>
+                <div>
+                  <h4>Focused on internships</h4>
+                  <p>Aiming for internship opportunities with stronger teamwork, communication, and development experience.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section fade-up">
+          <div class="container contact-grid">
+            <div class="contact-panel">
+              <p class="eyebrow">Contact</p>
+              <h2>Let's build something together.</h2>
+              <p>
+                Reach out to discuss internship opportunities, collaborations, or project ideas. I am available for new challenges and learning experiences.
+              </p>
+              <div class="contact-links">
+                <a href="mailto:jopriyajohnyofficial@gmail.com">Email</a>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+              </div>
+            </div>
+            <form class="contact-form" action="mailto:jopriyajohnyofficial@gmail.com" method="post" enctype="text/plain">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+              </label>
+              <button class="button button--primary" type="submit">Send Message</button>
+            </form>
           </div>
         </section>
       </main>
 
       <footer class="footer">
-        <p>© 2026 Jopriya Johny. Driven by curiosity , powered by technology.</p>
+        <div class="container footer__inner">
+          <p>© 2026 Jopriya Johny. Designed for internships, placements, and recruiter review.</p>
+          <button class="scroll-top" type="button" aria-label="Scroll to top">Top</button>
+        </div>
       </footer>
     </div>
+
+    <div class="modal" aria-hidden="true">
+      <div class="modal__panel">
+        <button class="modal__close" type="button" aria-label="Close details">Back</button>
+        <p class="eyebrow modal__eyebrow">Details</p>
+        <h2 class="modal__title"></h2>
+        <p class="modal__text"></p>
+        <p class="modal__meta"></p>
+      </div>
+    </div>
+
+    <script>
+      const themeToggle = document.querySelector('.theme-toggle');
+      const body = document.body;
+      const modal = document.querySelector('.modal');
+      const modalTitle = modal.querySelector('.modal__title');
+      const modalText = modal.querySelector('.modal__text');
+      const modalMeta = modal.querySelector('.modal__meta');
+      const closeModal = modal.querySelector('.modal__close');
+      const scrollTop = document.querySelector('.scroll-top');
+
+      document.querySelectorAll('[data-detail]').forEach((card) => {
+        card.addEventListener('click', () => {
+          const title = card.dataset.title;
+          const description = card.dataset.description;
+          const tech = card.dataset.tech;
+          modalTitle.textContent = title;
+          modalText.textContent = description;
+          modalMeta.textContent = `Technologies: ${tech}`;
+          modal.classList.add('modal--open');
+          modal.setAttribute('aria-hidden', 'false');
+        });
+      });
+
+      closeModal.addEventListener('click', () => {
+        modal.classList.remove('modal--open');
+        modal.setAttribute('aria-hidden', 'true');
+      });
+
+      modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+          closeModal.click();
+        }
+      });
+
+      themeToggle.addEventListener('click', () => {
+        body.classList.toggle('theme-light');
+        const mode = body.classList.contains('theme-light') ? 'Light' : 'Dark';
+        themeToggle.textContent = mode;
+      });
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+          scrollTop.classList.add('scroll-top--visible');
+        } else {
+          scrollTop.classList.remove('scroll-top--visible');
+        }
+      });
+
+      scrollTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
   </body>
 </html>
