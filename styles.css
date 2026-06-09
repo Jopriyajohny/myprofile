@@ -34,7 +34,19 @@ body {
 .hero__content {
   max-width: 800px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
+}
+
+.hero_layout{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.hero_content{
+  text-align: left;
+  max-width: 600px;
 }
 
 .hero__media {
