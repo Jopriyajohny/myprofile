@@ -1,0 +1,187 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1f2937;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  padding: 5rem 1.5rem 4rem;
+  background: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%);
+  color: #ffffff;
+}
+
+.hero__content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: clamp(2.75rem, 5vw, 4.5rem);
+  margin: 0;
+  line-height: 1.05;
+}
+
+.subtitle {
+  max-width: 34rem;
+  margin: 1.5rem auto 2rem;
+  font-size: 1.05rem;
+  opacity: 0.92;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button,
+.button--primary,
+.button--alt {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.button {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.button:hover,
+.button--primary:hover,
+.button--alt:hover {
+  transform: translateY(-1px);
+}
+
+.button--primary {
+  background: #ffffff;
+  color: #1f2937;
+}
+
+.button--alt {
+  background: transparent;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.section {
+  padding: 4.25rem 1.5rem;
+}
+
+.section--light {
+  background: #ffffff;
+}
+
+.container {
+  width: min(1120px, calc(100% - 3rem));
+  margin: 0 auto;
+}
+
+.section-header {
+  max-width: 720px;
+  margin: 0 auto 2.25rem;
+}
+
+.section-header h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+}
+
+.section-header p {
+  margin: 0;
+  color: #475569;
+}
+
+.grid {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 1.75rem;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.06);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  margin: 0;
+  color: #475569;
+}
+
+.contact-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #eef2ff 0%, #ffffff 100%);
+  border-radius: 28px;
+  padding: 2rem;
+}
+
+.contact-panel h2,
+.contact-panel p {
+  margin: 0;
+}
+
+.footer {
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 4rem;
+  }
+  .contact-panel {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
